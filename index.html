@@ -274,13 +274,8 @@ function isWebView() {
 window.onload = function () {
     if (!isWebView()) {
         document.write(`
-<html>
-<head><title>404 Not Found</title></head>
-<body>
-<center><h1>404 Not Found</h1></center>
-<hr><center>nginx/1.24.0</center>
-</body>
-</html>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
         `);
         return;
     }
